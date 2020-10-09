@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<style>
+		*{
+			text-align: center;
+}
+		div{
+			font-size: 15px;
+		}
+		h2{
+			text-align: center;
+		}
+		img{
+			max-width: 100%;
+			object-fit: cover;
+			width: 500px;
+			height: 500px;
+		}
+		html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	.main{
+		width: 700px;
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<div>
+	<b>
+	<h1>12A1</h1>
+	
+	<div class="main">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="./HTG-0662.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./HTG-0663.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./64905534_832913907080859_626983457628618752_n.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./65111018_832914013747515_1427303175324434432_n.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./65124523_832914677080782_3014402537336864768_n.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./65321722_832913727080877_3840633509261606912_n.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./65647773_832913817080868_9204927394291384320_n.jpg" alt=""> </div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		  </div>
+	</div>
+	</b>
+		</div>
+	</body>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+	 var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
+</html>

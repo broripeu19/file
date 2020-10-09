@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<style>
+		*{
+			text-align: center;
+}
+		div{
+			font-size: 15px;
+		}
+		h2{
+			text-align: center;
+		}
+		img{
+			max-width: 100%;
+			object-fit: cover;
+			width: 400px;
+			height: 400px;
+		}
+		html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	.main{
+		width: 700px;
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<div>
+	<b>
+	<h1>Đinh Thị Mỹ Linh</h1>
+	<p>Giới Tính : Nữ</p>
+	<p>Ngày Sinh : 21/11/2001</p>
+	<p>Tình Trạng Hôn Nhân: Ế Bền Vững</p>
+	<p>Sđt:Đếch có</p>
+	<p>Công Việc:CEO</p>
+	<div class="main">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide"><img src="./linh róm.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./HTG-3071.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./HTG-3072.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./HTG-3073.jpg" alt=""></div>
+			  <div class="swiper-slide"><img src="./HTG-3074.jpg" alt=""></div>
+
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		  </div>
+	</div>
+
+
+	<h2>Giá Bán: 1000VND<h2>
+	<button type="button">MUA</button>
+	</b>
+		</div>
+	</body>
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script>
+	 var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
+</html>
